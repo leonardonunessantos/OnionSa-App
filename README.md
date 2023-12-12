@@ -24,7 +24,7 @@ Os campos que a planilha precisa ter são:
 - Node.js v18 ou superior
 
 ### Passos de Instalação
-1. Clone o repositório: `git clone https://github.com/leonardonunessantos/OnionSaApp.git`
+1. Clone o repositório: `git clone https://github.com/leonardonunessantos/OnionSa-App.git`
 2. Instale as dependências: `npm install`
 3. Inicie o servidor de desenvolvimento: `ng serve`
 4. Acesse o sistema em: 'http://localhost:4200'
