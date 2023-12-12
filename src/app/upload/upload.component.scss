@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: #555;
+}
+
+p {
+  color: #777;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.file-upload {
+  margin-top: 20px;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-label {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  &:hover {
+    background-color: #2980b9;
+  }
+}
+
+.file-upload {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.file-input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px; /* Deixe um tamanho visível */
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0); /* Para o IE */
+}

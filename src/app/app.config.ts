@@ -1,8 +1,34 @@
-import { ApplicationConfig } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { UploadComponent } from './upload/upload.component'; 
+import { HttpClientModule } from '@angular/common/http';
+import { ExibirDadosComponent } from './exibir-dados/exibir-dados.component';
+import { AppComponent } from './app.component';
+import { RouterModule, Routes } from '@angular/router';
+import { UploadService } from './services/upload.service';
+import { AppRoutingModule } from './app-routing.module';
+import { ExibirDadosService } from './services/exibirDados.service';
+import { CommonModule } from '@angular/common';
 
-import { routes } from './app.routes';
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    AppRoutingModule,
+    CommonModule
+  ],
+  exports: [RouterModule],
+  providers: [
+    UploadService,
+    ExibirDadosService
+  ],
+  bootstrap: [
+    AppComponent
+  ] 
+})
 
-export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes)]
-};
+export class AppModule { }

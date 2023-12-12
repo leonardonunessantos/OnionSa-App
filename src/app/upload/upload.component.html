@@ -1,0 +1,39 @@
+<div *ngIf="!isLoading">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tela de Importação de Pedidos</title>
+</head>
+<body>
+  <h1>Sistema de Importação de Pedidos - Onion SA</h1>
+  <h2>Descrição do Sistema</h2>
+  
+  <p>O sistema permite que os usuários carreguem uma planilha de pedidos (<a href="/assets/Arquivo-exemplo.xlsx" target="_blank">exemplo</a>). Após o usuário realizar o upload dessa planilha, o sistema processará os dados e apresentará as seguintes informações na tela:</p>
+  
+  <h4>Análise Gráfica:</h4>
+  <ul>
+    <li>Gráfico de Vendas por Região: Apresenta uma visualização gráfica das vendas com base na distribuição regional dos pedidos.</li>
+    <li>Gráfico de Vendas por Produto: Exibe um gráfico representando as vendas por produto, oferecendo uma visão geral das preferências de compra.</li>
+  </ul>
+  
+  <h4>Lista de Vendas:</h4>
+  <ul>
+    <li>Nome do Cliente: Identificação dos clientes associados aos pedidos.</li>
+    <li>Produto: Descrição dos produtos adquiridos nos respectivos pedidos.</li>
+    <li>Valor Final com Entrega: Total do valor do pedido, incluindo os custos de entrega, se aplicável.</li>
+    <li>Data de Entrega: Data prevista ou efetiva de entrega dos produtos.</li>
+  </ul>
+  
+  <h2>Importar Planilha</h2>
+  <div class="file-upload">
+    <input type="file" id="fileInput" class="file-input" (change)="onFileSelected($event)" />
+    <label for="fileInput" class="file-label">Escolher Arquivo</label>
+  </div>
+</body>
+</html>
+</div>
+
+<div *ngIf="isLoading">
+<h2>Carregando...</h2>
+</div>
