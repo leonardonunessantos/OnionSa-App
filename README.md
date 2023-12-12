@@ -1,27 +1,51 @@
-# OnionSaApp
+# Onion S.A.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.6.
+Bem-vindo ao sistema de controle de vendas da Onion S.A.! Este é um projeto de front-end desenvolvido com Angular.JS para tratar questões de controle de vendas e logística na empresa.
 
-## Development server
+## Descrição do Sistema
+O sistema permite aos usuários importar uma planilha de pedidos e visualizar informações cruciais de vendas por meio de:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Gráfico de Vendas por Região: Apresenta visualização gráfica das vendas baseadas na distribuição regional dos pedidos.
+- Gráfico de Vendas por Produto: Exibe gráficos representando as vendas por produto, oferecendo uma visão geral das preferências de compra.
+- Lista de Vendas: Apresenta informações detalhadas, incluindo nome do cliente, produto, valor final com entrega e data de entrega.
 
-## Code scaffolding
+## Campos da Planilha
+Os campos que a planilha precisa ter são:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- CPF ou CNPJ
+- Nome ou Razão Social
+- CEP
+- Produto
+- Número do Pedido
+- Data
 
-## Build
+## Instalação
+### Pré-Requisitos
+- Node.js v18 ou superior
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Passos de Instalação
+1. Clone o repositório: `git clone https://github.com/leonardonunessantos/OnionSaApp.git`
+2. Instale as dependências: `npm install`
+3. Inicie o servidor de desenvolvimento: `ng serve`
+4. Acesse o sistema em: 'http://localhost:4200'
 
-## Running unit tests
+## Telas do Sistema
+O sistema possui duas telas:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Tela de Importação de Pedidos por Planilha
+Nesta tela, os usuários poderão:
 
-## Running end-to-end tests
+- Ler uma descrição do sistema.
+- Baixar um exemplo de planilha a ser preenchida.
+- Importar a planilha preenchida para o sistema.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Tela de Exibição de Dados
+Nesta tela, os usuários encontrarão:
 
-## Further help
+- Dois gráficos simples em forma de pizza.
+- Uma listagem com os pedidos e cálculos relevantes.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Uso
+- Faça o upload da planilha de pedidos na interface do sistema.
+- Explore os gráficos e a lista de vendas para obter informações detalhadas.
+
